@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <section class="first">
+        <nav>
+            <img src="1643804619158.jfif" alt="">
+            <p>PRO<span>JECTS</span></p>
+            <div class="nav_bar" id="navbar">
+                <ul class="nav_blur">
+                    <li class="nav_items"><a href="index.html">HOME</a></li>
+                    <li class="nav_items"><a href="about.html">ABOUT</a> </li>
+                    <li class="nav_items"><a href="courses.html">EDUCATION</a></li>
+                    
+                </ul>
+            </div>
+            <i id="icon" class="fa fa-bars" aria-hidden="true"></i>
+        </nav>
+    </section>
+
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</body>
+</html>

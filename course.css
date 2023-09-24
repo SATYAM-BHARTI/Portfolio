@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first {
+    min-height: 220px;
+    width: 100%;
+    background-color: rgb(34, 26, 96);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin-top: 5px;
+}
+
+.first p{
+    font-size: 10vw;
+    color: #79aee2;
+}
+
+.first p span{
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 5% 3%;
+    align-items: center;
+}
+
+nav img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.nav_blur:hover .nav_items{
+    filter: blur(5px);
+}
+
+.nav_blur:hover .nav_items:hover{
+    filter: blur(0px);
+}
+
+.nav_bar {
+    flex: 1;
+    text-align: right;
+}
+
+.nav_bar ul li {
+    list-style: none;
+    padding: 8px 8px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav_bar ul li a {
+    text-decoration: none;
+    color: rgb(255, 250, 250);
+    font-size: 30px;
+}
+
+.nav_bar ul li::after {
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #f445f4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_bar ul li:hover::after {
+    width: 100%;
+}
+
+nav .fa {
+    display: none;
+}
+
+.degree img {
+    width: 350px;
+    height: 350px;
+    border-radius: 40%;
+    margin: 10px;
+}
+
+.degree h2{
+    padding: 10px;
+    color: #c57979;
+    text-align: center;
+    background-color: #79aee2;
+    border-radius: 50%;
+}
+
+.crtfs h2{
+    padding: 10px;
+    color: #c57979;
+    text-align: center;
+    background-color: #79aee2;
+    border-radius: 50%;
+}
+.crts_hidden h2{
+    padding: 10px;
+    color: #c57979;
+    text-align: center;
+    background-color: #79aee2;
+    border-radius: 50%;
+}
+
+.colledge {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 10px;
+    align-items: center;
+}
+
+.colledge div {
+    background-color: burlywood;
+    border-radius: 25px;
+    padding: 10px 10px 10px;
+}
+
+.footer-basic {
+    padding: 40px 0;
+    background-color: #000000;
+    color: #79aee2;
+    margin-bottom: 0;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+.crts_hidden{
+    display: none;
+}
+@media(max-width: 900px){
+    nav ul{
+        position: fixed;
+        right: -100%;
+        background: rgb(3, 44, 82);
+        width: 40%;
+        height: 40vh;
+        text-align: center;
+        top: 150px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .nav_bar ul li{
+        display: block;
+    }
+    nav #icon {
+        display: block;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+    nav ul.show{
+        right: 0;
+    }
+
+    .colledge{
+        display: block;
+    }
+
+    .colledge img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .colledge div h1{
+        font-size: 20px;
+    }
+
+    .crtfs{
+        display: none;
+    }
+    .crts_hidden{
+        display: inline;
+    }
+    .slideshow-container {
+        width: 90vw;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #000000;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #000000;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+}
+
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 90vw;
+    height: 100vh;
+    left: 5%;
+}
+
+.left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.left-slide>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.left-slide h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-slide>div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+}
+
+button:hover {
+    color: #222;
+}
+
+button:focus {
+    outline: none;
+}
+
+.slider-container .action-buttons button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/*trending items */
+
